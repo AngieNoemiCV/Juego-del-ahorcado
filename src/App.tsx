@@ -10,12 +10,12 @@ const wordCategories = {
   frutas: {
     words: frutas,
     pista: {
-      apple: "Es una fruta comúnmente asociada con dispositivos electrónicos.",
+      manzana: "Es una fruta comúnmente asociada con dispositivos electrónicos.",
       banana: "Es una fruta amarilla y alargada que viene en racimos.",
-      cherry: "Es una pequeña fruta roja o negra con un hueso en el centro.",
-      date: "Es una fruta dulce y seca que crece en palmeras.",
-      fig: "Es una fruta de forma ovalada con una piel suave y una textura carnosa.",
-      grape: "Es una pequeña fruta que crece en racimos y se utiliza para hacer vino.",
+      cereza: "Es una pequeña fruta roja o negra con un hueso en el centro.",
+      mandarina: "Soy una fruta pequeña y redonda, mi piel es fácil de pelar sin ninguna fricción. Dentro de mí, encontrarás segmentos jugosos y dulces, que te harán sonreír con cada bocado. ¿Quién soy?",
+      higo: "Es una fruta de forma ovalada con una piel suave y una textura carnosa.",
+      uva: "Es una pequeña fruta que crece en racimos y se utiliza para hacer vino.",
       kiwi: "Es una fruta pequeña y peluda, de color marrón por fuera y verde por dentro."
     }
   },
