@@ -1,10 +1,21 @@
 import { useState } from "react";
+import Reloj from './Reloj';
+
 
 interface HangmanProps {
     words: string[];
     pista: { [word: string]: string };
 }
 
+import error1 from '../img/Error1.png'
+import error2 from '../img/Error2.png'
+import error3 from '../img/Error3.png'
+import error4 from '../img/Error4.png'
+import error5 from '../img/Error5.png'
+import error6 from '../img/Error6.png'
+import error7 from '../img/Error7.png'
+
+const Errores = [error1,error2,error3,error4,error5,error6,error7]
 const Hangman = ({ words, pista }: HangmanProps) => { 
 
     const [selectedWords, setSelectedWord] = useState(words[0]);
@@ -43,7 +54,10 @@ const Hangman = ({ words, pista }: HangmanProps) => {
 
         <div>
             <p>{displayWord.join(' ')}</p>
+            <Reloj intervalo={1000} /> 
             <p>Pista: {pista[selectedWords]}</p>
+            <img className="imagenFases" src={Errores[errorCount]} />
+            
             <input maxLength={1} onChange={(e) => handleGuess(e.target.value)} />
             {
                 (displayWord.join('') === selectedWords || errorCount > 5) && (
@@ -53,7 +67,7 @@ const Hangman = ({ words, pista }: HangmanProps) => {
                     }}>Select New Word</button>
                 )
             }
-            <p>Cantidad de errors {errorCount}</p>
+            <p>Cantidad de errors: { errorCount }</p>
             {displayWord.join('') === selectedWords && (
 
                 <p>You win in this game</p>
