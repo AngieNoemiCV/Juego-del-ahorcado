@@ -24,7 +24,8 @@ const Tiempo: React.FC<TiempoProps> = ({ intervalo = 1000 }) => {
   return (
     <div>
       <p>
-        {horas < 10 ? '0' + horas : horas} : {minutos < 10 ? '0' + minutos : minutos} : {segundos < 10 ? '0' + segundos : segundos} Tiempo trasncurrido
+      Tiempo trasncurrido:  
+      {horas < 10 ? ' 0' + horas : horas} : {minutos < 10 ? '0' + minutos : minutos} : {segundos < 10 ? '0' + segundos : segundos} 
       </p>
     </div>
   );
