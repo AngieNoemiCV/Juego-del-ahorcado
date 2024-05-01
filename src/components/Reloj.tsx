@@ -32,3 +32,9 @@ const Tiempo: React.FC<TiempoProps> = ({ intervalo = 1000 }) => {
 };
 
 export default Tiempo;
+
+
+
+
+
+
